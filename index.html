@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Vinay Godara | B.Tech CSE Student &amp; Programmer</title>
+  <meta name="title" content="Vinay Godara | B.Tech CSE Student &amp; Programmer">
+  <meta name="description" content="Personal portfolio of Vinay Godara, a first-year B.Tech Computer Science student at JECRC University, Jaipur. Exploring C, Python, logic building, and software development.">
+  <meta name="keywords" content="Vinay Godara, Portfolio, JECRC University, B.Tech CSE, Jaipur, C Programming, Python, Student Portfolio, Software Developer">
+  <meta name="author" content="Vinay Godara">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vinaygodara.dev/">
+  <meta property="og:title" content="Vinay Godara | B.Tech CSE Student &amp; Programmer">
+  <meta property="og:description" content="First-year Computer Science student at JECRC University, Jaipur. Exploring C, Python, and software engineering.">
+  <meta property="og:image" content="assets/avatar.svg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Vinay Godara | B.Tech CSE Student &amp; Programmer">
+  <meta property="twitter:description" content="First-year Computer Science student at JECRC University, Jaipur. Exploring C, Python, and software engineering.">
+  <meta property="twitter:image" content="assets/avatar.svg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: Outfit (Headings), Inter & Poppins (Body), JetBrains Mono (Code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       ACCESSIBILITY: SKIP LINK
+       ========================================================================= -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =========================================================================
+       CUSTOM CURSOR GLOW (Active on desktop pointers)
+       ========================================================================= -->
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       PRELOADER INTRO SCREEN
+       ========================================================================= -->
+  <div id="preloader" aria-label="Loading portfolio">
+    <div class="preloader-monogram">
+      <div class="preloader-spinner"></div>
+      <span>VG</span>
+    </div>
+    <div class="preloader-text">Initializing Portfolio...</div>
+  </div>
+
+  <!-- =========================================================================
+       SCROLL PROGRESS BAR
+       ========================================================================= -->
+  <div class="scroll-progress-bar" id="scroll-progress-bar" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <!-- =========================================================================
+       STICKY NAVBAR
+       ========================================================================= -->
+  <header class="navbar-header" id="navbar">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="nav-brand" aria-label="Vinay Godara Home">
+        <span class="nav-logo-badge">VG</span>
+        <span class="nav-brand-name">Vinay<span class="gradient-text">.dev</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Controls: Theme Toggle & Mobile Hamburger -->
+      <div class="nav-controls">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <i class="fa-solid fa-moon icon-moon"></i>
+          <i class="fa-solid fa-sun icon-sun"></i>
+        </button>
+
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MAIN CONTENT CONTAINER
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- =======================================================================
+         1. HERO SECTION
+         ======================================================================= -->
+    <section class="section hero-section" id="home">
+      <!-- Background Interactive Canvas -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: Copy & Actions -->
+          <div class="hero-content reveal">
+            
+            <div class="hero-status-pill">
+              <span class="pulse-dot"></span>
+              <span>Available for learning &amp; open source</span>
+            </div>
+
+            <p class="hero-greeting">&lt;hello_world&gt;</p>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Vinay Godara</span>
+            </h1>
+
+            <div class="hero-role-wrapper">
+              <span class="hero-role-prefix">I am a</span>
+              <span class="typed-text" id="typed-text"></span>
+              <span class="typing-cursor" aria-hidden="true"></span>
+            </div>
+
+            <p class="hero-intro">
+              First-year <strong>B.Tech Computer Science &amp; Engineering</strong> student at 
+              <strong>JECRC University, Jaipur</strong>. Passionate about problem solving, 
+              writing clean code in <strong>C &amp; Python</strong>, and on a dedicated journey 
+              to grow into a skilled software engineer.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>View Projects</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <i class="fa-regular fa-paper-plane"></i>
+                <span>Contact Me</span>
+              </a>
+            </div>
+
+            <!-- Social Links -->
+            <div class="hero-socials">
+              <!-- GITHUB LINK PLACEHOLDER -->
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub (Update with your username)">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <!-- LINKEDIN LINK PLACEHOLDER -->
+              <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn (Update with your profile)">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <!-- DIRECT EMAIL -->
+              <a href="mailto:vinaygodara729@gmail.com" class="social-icon-btn" aria-label="Send Email" title="Send Email">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Avatar Graphic Showcase -->
+          <div class="hero-visual reveal reveal-delay-2">
+            <div class="avatar-ambient-glow" aria-hidden="true"></div>
+            
+            <div class="avatar-frame">
+              <img src="assets/avatar.svg" alt="Vinay Godara developer illustration" width="340" height="340" loading="eager">
+
+              <!-- Floating Micro Glass Badges -->
+              <div class="hero-floating-badge badge-top-right">
+                <i class="fa-solid fa-code text-neon-cyan" style="color: var(--neon-cyan);"></i>
+                <span>Learning DSA</span>
+              </div>
+              <div class="hero-floating-badge badge-bottom-left">
+                <i class="fa-solid fa-terminal" style="color: var(--neon-violet);"></i>
+                <span>C &amp; Python</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         2. ABOUT ME SECTION
+         ======================================================================= -->
+    <section class="section" id="about">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-regular fa-user"></i> Who I Am</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">A glimpse into my background, my passions, and where I am headed in tech.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- First-Person Honest Bio Card -->
+          <div class="glass-card about-text-card reveal">
+            <span class="about-greeting-badge">// Welcome to my corner of the web</span>
+            <p class="about-bio-lead">
+              I'm <span class="about-highlight">Vinay Godara</span>, a 19-year-old first-year Computer Science &amp; Engineering undergraduate studying at JECRC University in the vibrant city of Jaipur, Rajasthan.
+            </p>
+            <div class="about-bio-body">
+              <p>
+                My passion for programming started with a simple curiosity: understanding how computers transform raw instructions into interactive tools. Right now, I am focusing deeply on mastering programming fundamentals through <strong>C</strong> and <strong>Python</strong>.
+              </p>
+              <p>
+                Instead of jumping prematurely into complex frameworks, I believe in building rock-solid foundations in <em>logic design, memory understanding, and algorithmic problem-solving</em>. Every day, I write code, debug errors, and explore new computer science concepts.
+              </p>
+              <p>
+                Outside of college lectures, you'll find me practicing coding exercises on VS Code, learning Git version control, and collaborating with peers on exciting student projects.
+              </p>
+            </div>
+            <a href="#contact" class="btn btn-outline btn-sm">
+              <i class="fa-solid fa-comments"></i>
+              <span>Let's Connect</span>
+            </a>
+          </div>
+
+          <!-- Quick Fact Cards Grid -->
+          <div class="quick-facts-grid">
+            
+            <div class="glass-card fact-card reveal reveal-delay-1">
+              <div class="fact-icon-wrapper">
+                <i class="fa-solid fa-cake-candles" style="color: #ec4899;"></i>
+              </div>
+              <span class="fact-label">Age</span>
+              <span class="fact-value">19 Years</span>
+              <span class="fact-subtext">Born for the digital age</span>
+            </div>
+
+            <div class="glass-card fact-card reveal reveal-delay-2">
+              <div class="fact-icon-wrapper">
+                <i class="fa-solid fa-location-dot" style="color: #06b6d4;"></i>
+              </div>
+              <span class="fact-label">Location</span>
+              <span class="fact-value">Jaipur, India</span>
+              <span class="fact-subtext">Rajasthan, Pink City</span>
+            </div>
+
+            <div class="glass-card fact-card reveal reveal-delay-3">
+              <div class="fact-icon-wrapper">
+                <i class="fa-solid fa-graduation-cap" style="color: #8b5cf6;"></i>
+              </div>
+              <span class="fact-label">Degree</span>
+              <span class="fact-value">B.Tech CSE</span>
+              <span class="fact-subtext">1st Year Student (2025–2029)</span>
+            </div>
+
+            <div class="glass-card fact-card reveal reveal-delay-4">
+              <div class="fact-icon-wrapper">
+                <i class="fa-solid fa-laptop-code" style="color: #10b981;"></i>
+              </div>
+              <span class="fact-label">Current Focus</span>
+              <span class="fact-value">C &amp; Python</span>
+              <span class="fact-subtext">Data structures &amp; problem solving</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. EDUCATION SECTION
+         ======================================================================= -->
+    <section class="section" id="education">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-solid fa-book-open"></i> Academic Journey</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <p class="section-subtitle">Milestones that have shaped my foundation and analytical thinking.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line"></div>
+
+          <!-- Entry 1: B.Tech CSE (Current) -->
+          <div class="timeline-item active reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="glass-card timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-degree">Bachelor of Technology in Computer Science &amp; Engineering</h3>
+                <span class="timeline-period">2025 &ndash; 2029 | 1st Year Ongoing</span>
+              </div>
+              <div class="timeline-institution">
+                <i class="fa-solid fa-building-columns"></i>
+                <span>JECRC University, Jaipur, Rajasthan</span>
+              </div>
+              <p class="timeline-details">
+                Currently in my first year immersed in core engineering principles, mathematical problem-solving, structured programming in C, computational thinking, and software engineering foundations. Actively engaging in coding workshops and peer technical clubs.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag tag-c"><i class="fa-solid fa-code"></i> C Language</span>
+                <span class="tag tag-python"><i class="fa-brands fa-python"></i> Python Basics</span>
+                <span class="tag tag-concept">Engineering Mathematics</span>
+                <span class="tag tag-concept">Digital Logic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Entry 2: Senior Secondary School (Placeholder) -->
+          <div class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="glass-card timeline-content">
+              <div class="timeline-header">
+                <h3 class="timeline-degree">Senior Secondary School (Class XII - PCM)</h3>
+                <span class="timeline-period">[Add Year, e.g. 2024]</span>
+              </div>
+              <div class="timeline-institution">
+                <i class="fa-solid fa-school"></i>
+                <span>[Add School Name, City, Board]</span>
+              </div>
+              
+              <!-- Helpful notice for Vinay -->
+              <div class="placeholder-callout">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <span><strong>Quick Edit:</strong> Replace this placeholder with your high school name, passing year, and percentage in <code>index.html</code>.</span>
+              </div>
+
+              <p class="timeline-details">
+                Completed higher secondary education with a science curriculum centered on Physics, Chemistry, and Mathematics (PCM), building strong quantitative reasoning, logic development, and analytical skills.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag tag-concept">Physics</span>
+                <span class="tag tag-concept">Chemistry</span>
+                <span class="tag tag-concept">Mathematics</span>
+                <span class="tag tag-placeholder">[Score / Percentage]</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. SKILLS SECTION
+         ======================================================================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-solid fa-microchip"></i> Capabilities</span>
+          <h2 class="section-title">Skills &amp; <span class="gradient-text">Competencies</span></h2>
+          <p class="section-subtitle">An honest, grounded overview of what I am actively learning and applying.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Programming Languages (Animated Bars) -->
+          <div class="glass-card skill-category-card reveal">
+            <h3 class="category-title">
+              <i class="fa-solid fa-terminal category-icon"></i>
+              <span>Programming Languages</span>
+            </h3>
+
+            <div class="skill-bar-list">
+              
+              <!-- C Language -->
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>C Programming</span>
+                  <span class="skill-level-badge">Beginner (Foundations)</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-fill" data-progress="50%"></div>
+                </div>
+                <span class="fact-subtext">Variables, loops, functions, arrays, pointers intro</span>
+              </div>
+
+              <!-- Python -->
+              <div class="skill-item">
+                <div class="skill-meta">
+                  <span>Python</span>
+                  <span class="skill-level-badge">Beginner (Syntax &amp; Scripts)</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-fill" data-progress="45%"></div>
+                </div>
+                <span class="fact-subtext">Control flow, functions, lists, basic file operations</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 2: Core Computer Science Concepts -->
+          <div class="glass-card skill-category-card reveal reveal-delay-1">
+            <h3 class="category-title">
+              <i class="fa-solid fa-brain category-icon"></i>
+              <span>Core Concepts</span>
+            </h3>
+
+            <div class="skill-chips-cloud">
+              <div class="skill-chip">
+                <i class="fa-solid fa-puzzle-piece skill-chip-icon"></i>
+                <span>Problem Solving</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-sitemap skill-chip-icon"></i>
+                <span>Basic Data Structures (Learning)</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-diagram-project skill-chip-icon"></i>
+                <span>Logic Building</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-code-branch skill-chip-icon"></i>
+                <span>Algorithm Flow &amp; Tracing</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-calculator skill-chip-icon"></i>
+                <span>Discrete Math Concepts</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Tools & Environment -->
+          <div class="glass-card skill-category-card reveal">
+            <h3 class="category-title">
+              <i class="fa-solid fa-screwdriver-wrench category-icon"></i>
+              <span>Tools &amp; Environment</span>
+            </h3>
+
+            <div class="skill-chips-cloud">
+              <div class="skill-chip">
+                <i class="fa-solid fa-code skill-chip-icon"></i>
+                <span>Visual Studio Code</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-brands fa-git-alt skill-chip-icon"></i>
+                <span>Git &amp; GitHub (Learning)</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-terminal skill-chip-icon"></i>
+                <span>Command Line / Terminal</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-brands fa-windows skill-chip-icon"></i>
+                <span>Windows &amp; GCC Toolchain</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Soft Skills & Work Ethic -->
+          <div class="glass-card skill-category-card reveal reveal-delay-1">
+            <h3 class="category-title">
+              <i class="fa-solid fa-users category-icon"></i>
+              <span>Soft Skills &amp; Mindset</span>
+            </h3>
+
+            <div class="skill-chips-cloud">
+              <div class="skill-chip">
+                <i class="fa-solid fa-bolt skill-chip-icon"></i>
+                <span>Quick Learner</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-people-group skill-chip-icon"></i>
+                <span>Team Collaboration</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-calendar-check skill-chip-icon"></i>
+                <span>Daily Consistency</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-magnifying-glass skill-chip-icon"></i>
+                <span>Curiosity &amp; Research</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-comment-dots skill-chip-icon"></i>
+                <span>Open to Constructive Feedback</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. PROJECTS SECTION
+         ======================================================================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-solid fa-code-commit"></i> Hands-on Practice</span>
+          <h2 class="section-title">Starter <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Real programs I built while learning C and Python. Each card is ready for your repository links!</p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Terminal Calculator (C) -->
+          <div class="glass-card project-card reveal">
+            <div class="project-card-header">
+              <div class="project-category-icon">
+                <i class="fa-solid fa-calculator"></i>
+              </div>
+              <span class="tag tag-c"><i class="fa-solid fa-c"></i> C Program</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Console Arithmetic Calculator</h3>
+              <p class="project-desc">
+                An interactive menu-driven command-line calculator written in C. Performs standard operations (addition, subtraction, multiplication, division, modulo, and power) while gracefully handling divide-by-zero errors and invalid characters.
+              </p>
+
+              <div class="project-highlights">
+                <div class="project-highlights-title">What I Practiced</div>
+                <ul class="project-highlights-list">
+                  <li><code>switch-case</code> statements &amp; input sanitization</li>
+                  <li>Modular functions for clean arithmetic execution</li>
+                  <li>Looping menus with smooth exit options</li>
+                </ul>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">C</span>
+                <span class="tag">CLI</span>
+                <span class="tag">Math Logic</span>
+                <span class="tag">Control Flow</span>
+              </div>
+
+              <div class="project-actions">
+                <!-- Replace '#' with your GitHub repo URL -->
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-github"></i>
+                  <span>View Code</span>
+                </a>
+                <a href="#contact" class="btn btn-primary btn-sm">
+                  <i class="fa-solid fa-play"></i>
+                  <span>Demo Preview</span>
+                </a>
+              </div>
+              <span class="editable-hint"><i class="fa-solid fa-circle-info"></i> Easy-to-edit placeholder link</span>
+            </div>
+          </div>
+
+          <!-- Project 2: Number Guessing Game (Python) -->
+          <div class="glass-card project-card reveal reveal-delay-1">
+            <div class="project-card-header">
+              <div class="project-category-icon">
+                <i class="fa-solid fa-dice"></i>
+              </div>
+              <span class="tag tag-python"><i class="fa-brands fa-python"></i> Python 3</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Number Guessing Game</h3>
+              <p class="project-desc">
+                A CLI game written in Python where the computer picks a random secret number between 1 and 100, and the player receives smart hints ("Too High!", "Too Low!") with an attempt counter, difficulty levels, and score tracking.
+              </p>
+
+              <div class="project-highlights">
+                <div class="project-highlights-title">What I Practiced</div>
+                <ul class="project-highlights-list">
+                  <li>Python <code>random</code> library integration</li>
+                  <li><code>while</code> loops and boundary conditional checks</li>
+                  <li>Friendly terminal prompts &amp; replay mechanisms</li>
+                </ul>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Logic</span>
+                <span class="tag">Randomization</span>
+                <span class="tag">Game Dev</span>
+              </div>
+
+              <div class="project-actions">
+                <!-- Replace '#' with your GitHub repo URL -->
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-github"></i>
+                  <span>View Code</span>
+                </a>
+                <a href="#contact" class="btn btn-primary btn-sm">
+                  <i class="fa-solid fa-play"></i>
+                  <span>Demo Preview</span>
+                </a>
+              </div>
+              <span class="editable-hint"><i class="fa-solid fa-circle-info"></i> Easy-to-edit placeholder link</span>
+            </div>
+          </div>
+
+          <!-- Project 3: Simple Student/Marks Manager (C) -->
+          <div class="glass-card project-card reveal">
+            <div class="project-card-header">
+              <div class="project-category-icon">
+                <i class="fa-solid fa-user-graduate"></i>
+              </div>
+              <span class="tag tag-c"><i class="fa-solid fa-c"></i> C Program</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Student Records &amp; Marks Manager</h3>
+              <p class="project-desc">
+                A structured terminal utility to manage student roll numbers, subject marks, percentage computations, and grade assignments (A+, A, B, etc.). Demonstrates the use of C structures (<code>struct</code>) and arrays.
+              </p>
+
+              <div class="project-highlights">
+                <div class="project-highlights-title">What I Practiced</div>
+                <ul class="project-highlights-list">
+                  <li>C <code>struct</code> to encapsulate related data</li>
+                  <li>Array traversal, searching by roll number</li>
+                  <li>Average calculation &amp; formatted tabular printouts</li>
+                </ul>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">C</span>
+                <span class="tag">Structures</span>
+                <span class="tag">Arrays</span>
+                <span class="tag">Record Keeping</span>
+              </div>
+
+              <div class="project-actions">
+                <!-- Replace '#' with your GitHub repo URL -->
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-github"></i>
+                  <span>View Code</span>
+                </a>
+                <a href="#contact" class="btn btn-primary btn-sm">
+                  <i class="fa-solid fa-play"></i>
+                  <span>Demo Preview</span>
+                </a>
+              </div>
+              <span class="editable-hint"><i class="fa-solid fa-circle-info"></i> Easy-to-edit placeholder link</span>
+            </div>
+          </div>
+
+          <!-- Project 4: Pattern Printing Programs (C) -->
+          <div class="glass-card project-card reveal reveal-delay-1">
+            <div class="project-card-header">
+              <div class="project-category-icon">
+                <i class="fa-solid fa-shapes"></i>
+              </div>
+              <span class="tag tag-c"><i class="fa-solid fa-c"></i> C Program</span>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Pattern Printing Algorithm Suite</h3>
+              <p class="project-desc">
+                A comprehensive compilation of 20+ algorithmic shape &amp; number patterns in C, including pyramids, hollow diamonds, Floyd's triangle, Pascal's triangle basics, and alphabet matrices.
+              </p>
+
+              <div class="project-highlights">
+                <div class="project-highlights-title">What I Practiced</div>
+                <ul class="project-highlights-list">
+                  <li>Mastery over nested <code>for</code> loops &amp; index mapping</li>
+                  <li>Mathematical row-column relationships &amp; space offsets</li>
+                  <li>Strengthened foundational logic building for DSA</li>
+                </ul>
+              </div>
+
+              <div class="project-tags">
+                <span class="tag">C</span>
+                <span class="tag">Nested Loops</span>
+                <span class="tag">Patterns</span>
+                <span class="tag">Logic Building</span>
+              </div>
+
+              <div class="project-actions">
+                <!-- Replace '#' with your GitHub repo URL -->
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-github"></i>
+                  <span>View Code</span>
+                </a>
+                <a href="#contact" class="btn btn-primary btn-sm">
+                  <i class="fa-solid fa-play"></i>
+                  <span>Demo Preview</span>
+                </a>
+              </div>
+              <span class="editable-hint"><i class="fa-solid fa-circle-info"></i> Easy-to-edit placeholder link</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. CERTIFICATIONS / ACHIEVEMENTS SECTION
+         ======================================================================= -->
+    <section class="section" id="achievements">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-solid fa-trophy"></i> Growth &amp; Milestones</span>
+          <h2 class="section-title">Achievements &amp; <span class="gradient-text">Certifications</span></h2>
+          <p class="section-subtitle">Tracking real milestones as I embark on my computer science voyage.</p>
+        </div>
+
+        <!-- Honest Live Stats Counter Strip -->
+        <div class="stats-strip reveal">
+          
+          <div class="glass-card stat-card">
+            <div class="stat-number-wrapper">
+              <span class="counter" data-target="50">0</span>+
+            </div>
+            <div class="stat-label">Programs Written</div>
+            <div class="stat-subtext">C exercises, loops &amp; logic</div>
+          </div>
+
+          <div class="glass-card stat-card">
+            <div class="stat-number-wrapper">
+              <span class="counter" data-target="2">0</span>
+            </div>
+            <div class="stat-label">Core Languages</div>
+            <div class="stat-subtext">C &amp; Python fundamentals</div>
+          </div>
+
+          <div class="glass-card stat-card">
+            <div class="stat-number-wrapper">
+              <span class="counter" data-target="4">0</span>
+            </div>
+            <div class="stat-label">Starter Projects</div>
+            <div class="stat-subtext">CLI apps &amp; utilities</div>
+          </div>
+
+          <div class="glass-card stat-card">
+            <div class="stat-number-wrapper">
+              <span class="counter" data-target="150">0</span>+
+            </div>
+            <div class="stat-label">Hours of Coding</div>
+            <div class="stat-subtext">Lecture labs &amp; self study</div>
+          </div>
+
+        </div>
+
+        <!-- Certifications & Roadmap Cards -->
+        <div class="cert-grid">
+          
+          <!-- Placeholder Certificate 1 -->
+          <div class="glass-card cert-card reveal">
+            <div class="cert-badge-icon">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <h3 class="cert-title">[Add Certificate Name]</h3>
+            <div class="cert-issuer">[Platform / Organization - Year]</div>
+            <p class="cert-desc">
+              Placeholder for your first online course certificate (e.g., Coursera, NPTEL, edX, or University Workshop). Update with your credential URL once completed.
+            </p>
+            <span class="cert-status-pill cert-status-planned"><i class="fa-regular fa-clock"></i> Planned / In Progress</span>
+          </div>
+
+          <!-- Planned Milestone 2: C Programming Mastery -->
+          <div class="glass-card cert-card reveal reveal-delay-1">
+            <div class="cert-badge-icon">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <h3 class="cert-title">C Programming &amp; Logic Mastery</h3>
+            <div class="cert-issuer">JECRC University &amp; Self-Paced &bull; 2026</div>
+            <p class="cert-desc">
+              Rigorous curriculum covering memory management, pointers, dynamic allocation, structures, and algorithmic problem-solving.
+            </p>
+            <span class="cert-status-pill cert-status-active"><i class="fa-solid fa-spinner fa-spin"></i> Active Learning</span>
+          </div>
+
+          <!-- Planned Milestone 3: Python for Beginners -->
+          <div class="glass-card cert-card reveal reveal-delay-2">
+            <div class="cert-badge-icon">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <h3 class="cert-title">Python Programming Specialization</h3>
+            <div class="cert-issuer">[Target Platform, e.g. HackerRank / Kaggle]</div>
+            <p class="cert-desc">
+              Targeted goal to achieve basic problem-solving stars and Python certifications as hands-on skill validation.
+            </p>
+            <span class="cert-status-pill cert-status-planned"><i class="fa-regular fa-calendar-check"></i> Upcoming Goal</span>
+          </div>
+
+        </div>
+
+        <!-- Roadmap Callout Banner -->
+        <div class="glass-card roadmap-banner reveal">
+          <div class="roadmap-content">
+            <h3 class="roadmap-title"><i class="fa-solid fa-compass gradient-text"></i> Continuous Growth Mindset</h3>
+            <p class="roadmap-desc">
+              As a first-year student, this section will continuously grow as I earn formal certifications, participate in hackathons, and contribute to college technical initiatives. Stay tuned!
+            </p>
+          </div>
+          <a href="#contact" class="btn btn-outline btn-sm">
+            <span>Collaborate on Projects</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. CONTACT SECTION
+         ======================================================================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag"><i class="fa-regular fa-envelope"></i> Get In Touch</span>
+          <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+          <p class="section-subtitle">Have advice, an interesting beginner project, or just want to chat about tech? Drop me a message!</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Left Column: Contact Information & Email Card -->
+          <div class="glass-card contact-info-card reveal">
+            <div>
+              <h3 class="contact-info-title">Say Hello!</h3>
+              <p class="contact-info-desc">
+                I am always eager to learn from experienced developers, connect with fellow students, and explore exciting software projects. Feel free to reach out directly.
+              </p>
+            </div>
+
+            <!-- Email Card with Copy-to-Clipboard Action -->
+            <div class="contact-email-box">
+              <div class="email-address-wrapper">
+                <i class="fa-regular fa-envelope email-icon"></i>
+                <span class="email-text" id="email-address-text">vinaygodara729@gmail.com</span>
+              </div>
+              <button class="copy-email-btn" id="copy-email-btn" title="Copy email address" aria-label="Copy email address">
+                <i class="fa-regular fa-copy" id="copy-btn-icon"></i>
+                <span id="copy-btn-text">Copy</span>
+              </button>
+            </div>
+
+            <!-- Meta Details -->
+            <div class="contact-meta-list">
+              <div class="contact-meta-item">
+                <div class="contact-meta-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <div class="contact-meta-label">Campus Location</div>
+                  <div class="contact-meta-value">JECRC University, Jaipur, Rajasthan, India</div>
+                </div>
+              </div>
+
+              <div class="contact-meta-item">
+                <div class="contact-meta-icon">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <div class="contact-meta-label">Response Time</div>
+                  <div class="contact-meta-value">Usually responds within 24 hours</div>
+                </div>
+              </div>
+
+              <div class="contact-meta-item">
+                <div class="contact-meta-icon">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                  <div class="contact-meta-label">Current Status</div>
+                  <div class="contact-meta-value">1st Year B.Tech CSE Undergraduate</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links in Contact Card -->
+            <div class="hero-socials">
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:vinaygodara729@gmail.com" class="social-icon-btn" aria-label="Send Email" title="Send Email">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Working Contact Form -->
+          <div class="glass-card contact-form-card reveal reveal-delay-1">
+            <form id="portfolio-contact-form" novalidate>
+              
+              <div class="form-group" id="group-name">
+                <label for="contact-name" class="form-label">
+                  <span>Your Name</span>
+                  <span class="required-indicator">*</span>
+                </label>
+                <input type="text" id="contact-name" name="name" class="form-control" placeholder="e.g. Alex Johnson" required autocomplete="name">
+                <span class="form-validation-msg" id="name-error">Please enter your name.</span>
+              </div>
+
+              <div class="form-group" id="group-email">
+                <label for="contact-email" class="form-label">
+                  <span>Your Email Address</span>
+                  <span class="required-indicator">*</span>
+                </label>
+                <input type="email" id="contact-email" name="email" class="form-control" placeholder="e.g. alex@example.com" required autocomplete="email">
+                <span class="form-validation-msg" id="email-error">Please provide a valid email address.</span>
+              </div>
+
+              <div class="form-group" id="group-subject">
+                <label for="contact-subject" class="form-label">
+                  <span>Subject</span>
+                </label>
+                <input type="text" id="contact-subject" name="subject" class="form-control" placeholder="e.g. Project collaboration / Hello Vinay">
+              </div>
+
+              <div class="form-group" id="group-message">
+                <label for="contact-message" class="form-label">
+                  <span>Your Message</span>
+                  <span class="required-indicator">*</span>
+                </label>
+                <textarea id="contact-message" name="message" class="form-control" placeholder="Write your message here..." required></textarea>
+                <span class="form-validation-msg" id="message-error">Please write a short message before sending.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary contact-form-submit">
+                <i class="fa-regular fa-paper-plane"></i>
+                <span>Send Message (via Email)</span>
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       TOAST NOTIFICATION COMPONENT
+       ========================================================================= -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span id="toast-message">Email copied to clipboard!</span>
+  </div>
+
+  <!-- =========================================================================
+       BACK TO TOP FLOATING BUTTON
+       ========================================================================= -->
+  <button class="back-to-top-btn" id="back-to-top" aria-label="Back to top of page" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        
+        <div class="footer-brand">
+          <div class="footer-logo">Vinay <span class="gradient-text">Godara</span></div>
+          <div class="footer-tagline">1st-Year B.Tech CSE &bull; JECRC University, Jaipur</div>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:vinaygodara729@gmail.com" class="social-icon-btn" aria-label="Email">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vinay Godara. Built with passion at JECRC University, Jaipur.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       SCRIPTS
+       ========================================================================= -->
+  <script src="script.js"></script>
+</body>
+</html>
